@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+  <addon id="plugin.video.n1exyu" name="N1 Info" provider-name="zchira" version="0.6">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+      <import addon="script.module.beautifulsoup4" version="4.3.1"/>
+      <import addon="plugin.video.youtube" version="4.4.4" />
+      <import addon="script.module.googleapi" version="1.4.0" />
+
+      <import addon="script.module.oauth2client" version="1.4.7" />
+    </requires>
+    <extension library="addon.py" point="xbmc.python.pluginsource">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <language>en</language>
+      <platform>all</platform>
+      <summary lang="en">Watch the live stream from N1 info in Serbian/Croatian</summary>
+      <description lang="en">N1 is exYu regional news TV</description>
+      <email>zchira@gmail.com</email>
+    </extension>
+  </addon>
+
+  <addon id="plugin.video.partizan" name="Partizan TV" provider-name="zchira" version="0.3">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+      <import addon="plugin.video.youtube" version="4.4.4" />
+    </requires>
+    <extension library="addon.py" point="xbmc.python.pluginsource">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <language>en</language>
+      <platform>all</platform>
+      <summary lang="en">Watch the live stream from Partizan TV</summary>
+      <description lang="en">Partizan TV is the official TV of FC PArtizan as a part of JSD Partizan (Yugoslav Sports Association Partizan)
+      </description>
+      <email>zchira@gmail.com</email>
+    </extension>
+  </addon>
+
+</addons>
